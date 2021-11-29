@@ -1,0 +1,5 @@
+1、导包 jdbc+mybatis
+2、配置mybatis位置文件 :数据源 + 可调用的SQL映射文件
+3、搭建流程
+        (1):编写mybatis配置文件
+        (2):编写SQL映射文件(mapper)并事先设计好对应的数据类型

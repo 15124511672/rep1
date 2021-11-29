@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 配置开发环境 -->
+	<environments default="yd">
+		<environment id="yd">
+			<!-- 配置事务管理器 -->
+			<transactionManager type="JDBC"></transactionManager>
+			<!-- 配置数据源 -->
+			<dataSource type="POOLED">
+				<!-- 配置驱动 -->
+				<property name="driver" value="com.mysql.jdbc.Driver"/>
+				<!-- 配置URL -->
+				<property name="url" value="jdbc:mysql://127.0.0.1:3306/lx827"/>
+				<!-- 配置用户id -->
+				<property name="username" value="root"/>
+				<!-- 配置密码 -->
+				<property name="password" value="root"/>
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- 配置好可以调用的SQL映射文件 -->
+	<mappers>
+		<mapper resource="com/lx/mybatis/mapper/EmpMapper.xml"/>
+	</mappers>
+
+</configuration>
